@@ -16,7 +16,6 @@ from views.func import *
 
 class Ui_Dialog(object):
 
-
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
         Dialog.resize(816, 686)

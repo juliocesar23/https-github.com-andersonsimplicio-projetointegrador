@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="318a69e6-7a54-4dda-8fe6-d510cb2f59f8" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/Fornecedor.py" afterPath="$PROJECT_DIR$/views/FornecedorOld.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/img/OpEscolha.ui" afterPath="$PROJECT_DIR$/views/ui/OpEscolha.ui" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/img/cadastrodialog.ui" afterPath="$PROJECT_DIR$/views/ui/cadastrodialog.ui" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/img/cliente.ui" afterPath="$PROJECT_DIR$/views/ui/cliente.ui" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/img/consultadialog.ui" afterPath="$PROJECT_DIR$/views/ui/consultadialog.ui" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/img/fornecedorteste.ui" afterPath="$PROJECT_DIR$/views/ui/fornecedorteste.ui" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/img/mainmenu2.0.ui" afterPath="$PROJECT_DIR$/views/ui/mainmenu2.0.ui" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/img/produtoteste.ui" afterPath="$PROJECT_DIR$/views/ui/produtoteste.ui" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sidsid.txt" afterPath="$PROJECT_DIR$/sidsid.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,75 +25,14 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Produto.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/Produto.py">
+      <file leaf-file-name="FornecedorOld.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/FornecedorOld.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3120">
-              <caret line="208" column="62" lean-forward="false" selection-start-line="208" selection-start-column="62" selection-end-line="208" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3870">
-              <caret line="415" column="41" lean-forward="false" selection-start-line="415" selection-start-column="41" selection-end-line="415" selection-end-column="41" />
-              <folding>
-                <element signature="e#196#257#0" expanded="true" />
-                <element signature="e#1134#1307#0" expanded="false" />
-                <element signature="e#2342#2862#0" expanded="false" />
-                <element signature="e#3778#4298#0" expanded="false" />
-                <element signature="e#5230#5750#0" expanded="false" />
-                <element signature="e#6710#7230#0" expanded="false" />
-                <element signature="e#8179#8780#0" expanded="false" />
-                <element signature="e#14999#17014#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cliente.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/cliente.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4125">
-              <caret line="281" column="0" lean-forward="false" selection-start-line="281" selection-start-column="0" selection-end-line="281" selection-end-column="0" />
+            <state relative-caret-position="2484">
+              <caret line="206" column="0" lean-forward="false" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
               <folding>
                 <element signature="e#193#235#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Fornecedor.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/Fornecedor.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3300">
-              <caret line="226" column="71" lean-forward="false" selection-start-line="226" selection-start-column="71" selection-end-line="226" selection-end-column="71" />
-              <folding>
-                <element signature="e#193#235#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="readme.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/readme.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="72" lean-forward="false" selection-start-line="0" selection-start-column="72" selection-end-line="0" selection-end-column="72" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sidsid.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sidsid.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -133,9 +79,10 @@
         <option value="$PROJECT_DIR$/views/main.py" />
         <option value="$PROJECT_DIR$/views/cliente.py" />
         <option value="$PROJECT_DIR$/views/Produto.py" />
-        <option value="$PROJECT_DIR$/views/Fornecedor.py" />
         <option value="$PROJECT_DIR$/readme.txt" />
         <option value="$PROJECT_DIR$/sidsid.txt" />
+        <option value="$PROJECT_DIR$/views/Fornecedor.py" />
+        <option value="$PROJECT_DIR$/views/ui/Fornecedor.py" />
       </list>
     </option>
   </component>
@@ -174,6 +121,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetointegrador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetointegrador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetointegrador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetointegrador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -200,14 +179,15 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Model" />
-      <recent name="$PROJECT_DIR$/views" />
-      <recent name="$PROJECT_DIR$/Excluir" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/views" />
       <recent name="$PROJECT_DIR$/views/img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/views" />
+      <recent name="$PROJECT_DIR$/views/ui" />
+      <recent name="$PROJECT_DIR$/Model" />
+      <recent name="$PROJECT_DIR$/Excluir" />
     </key>
   </component>
   <component name="RunManager" selected="Python.mainwindow">
@@ -465,7 +445,14 @@
       <option name="project" value="LOCAL" />
       <updated>1487095976271</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Teste de atualização">
+      <created>1487163909686</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1487163909686</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -483,23 +470,23 @@
     <frame x="-1" y="0" width="1922" height="1053" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.096354164" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15104167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12460733" sideWeight="0.508342" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22198953" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22198953" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12460733" sideWeight="0.49375" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39979124" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12460733" sideWeight="0.49375" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39979124" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -523,76 +510,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/OpEscolha.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MainTeste.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4545">
-          <caret line="416" column="0" lean-forward="false" selection-start-line="416" selection-start-column="0" selection-end-line="416" selection-end-column="0" />
-          <folding>
-            <element signature="e#196#257#0" expanded="true" />
-            <element signature="e#1134#1307#0" expanded="false" />
-            <element signature="e#2342#2862#0" expanded="false" />
-            <element signature="e#3778#4298#0" expanded="false" />
-            <element signature="e#5230#5750#0" expanded="false" />
-            <element signature="e#6710#7230#0" expanded="false" />
-            <element signature="e#8179#8780#0" expanded="false" />
-            <element signature="e#14999#17014#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Excluir/cadastrodialog.py" />
-    <entry file="file://$PROJECT_DIR$/views/OpEscolha.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MainTeste.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4545">
-          <caret line="416" column="0" lean-forward="true" selection-start-line="416" selection-start-column="0" selection-end-line="416" selection-end-column="0" />
-          <folding>
-            <element signature="e#196#257#0" expanded="true" />
-            <element signature="e#1134#1307#0" expanded="false" />
-            <element signature="e#2342#2862#0" expanded="false" />
-            <element signature="e#3778#4298#0" expanded="false" />
-            <element signature="e#5230#5750#0" expanded="false" />
-            <element signature="e#6710#7230#0" expanded="false" />
-            <element signature="e#8179#8780#0" expanded="false" />
-            <element signature="e#14999#17014#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/validador.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/validador.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
@@ -801,16 +718,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/backup/Fornecedor.py" />
-    <entry file="file://$PROJECT_DIR$/views/Fornecedor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3300">
-          <caret line="226" column="71" lean-forward="false" selection-start-line="226" selection-start-column="71" selection-end-line="226" selection-end-column="71" />
-          <folding>
-            <element signature="e#193#235#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -819,11 +726,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/ui/cadastrodialog.ui">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/ui/cliente.ui">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/ui/consultadialog.ui">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/ui/fornecedorteste.ui">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/ui/mainmenu2.0.ui">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/ui/OpEscolha.ui">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/ui/produtoteste.ui">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sidsid.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
+          <caret line="0" column="32" lean-forward="true" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/Fornecedor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="201" column="12" lean-forward="false" selection-start-line="201" selection-start-column="12" selection-end-line="201" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/FornecedorOld.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2484">
+          <caret line="206" column="0" lean-forward="false" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
+          <folding>
+            <element signature="e#193#235#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
