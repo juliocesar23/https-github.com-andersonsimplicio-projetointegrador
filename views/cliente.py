@@ -7,6 +7,13 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtCore import pyqtSlot
+from PyQt5.QtGui import *
+from PyQt5.QtWidgets import *
+from controller.validador import *
+from controller.validador import AlertaCpfCnpj
+from views.func import *
 
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
@@ -176,16 +183,15 @@ class Ui_Dialog(object):
         self.label_28.setGeometry(QtCore.QRect(180, 200, 71, 16))
         self.label_28.setObjectName("label_28")
 
-
-
-
-
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
+        # Controles dos botoes
+        self.btnSalvar.clicked.connect(self.validar)
+        self.btnSalvar.clicked.connect(self.CadastroSalvar)
 
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
-        Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
+        Dialog.setWindowTitle(_translate("Dialog", "Cadastro Cliente"))
         self.label_23.setText(_translate("Dialog", "e-mail Comercial"))
         self.label_30.setText(_translate("Dialog", "Bairro"))
         self.label_17.setText(_translate("Dialog", "Telefone 2"))
@@ -216,4 +222,57 @@ class Ui_Dialog(object):
         self.label_7.setText(_translate("Dialog", "Nº"))
         self.label_3.setText(_translate("Dialog", "Nome Fantasia"))
         self.label_28.setText(_translate("Dialog", "Cidade"))
+
+
+
+
+
+    def validar(self):
+        if self.radioFisica.isChecked():
+            if validar_cpf(self.cmpCnpjCpf.text()) != False:
+                print("cpf:")
+                self.valido = True
+        elif self.radioJuridica.isChecked():
+            if validar_cnpj(self.cmpCnpjCpf.text()) != False:
+                print("cnpj:")
+                self.valido = True
+        else:
+            AlertaCpfCnpj()
+            self.valido = False
+
+    def CadastroSalvar(self):
+        dadosLista = []  # Captura uma lista de dados referente ao cliente
+        endercoLista = []  # lista de dados referente apenas ao endereco do cliente
+
+        if self.valido == True:
+
+            dadosLista.append(self.cmpCodigo.text())
+            dadosLista.append(self.cmpRazaoSocial.text())
+            dadosLista.append(self.cmpNomeFantasia.text())
+            dadosLista.append(self.cmpCnpjCpf.text())
+            dadosLista.append(self.cmpInscricaoEstadual.text())
+            dadosLista.append(self.cmpInscricaoEstadual_2.text())
+            print(dadosLista)
+            # cadastro de endereco
+            print(self.cmpCep.text())
+            print(self.cmpEndereco.text())
+            print(self.cmpNum.text())
+            print(self.cmpComplemento.text())
+            print(self.cmpBairro.text())
+            print(self.cmpCidade.text())
+            print(self.cmpEndereco.text())
+            print(self.cmpCodMunicipio.text())
+            print(self.cmpUf.text())
+            print(self.cmpPais.text())
+            if self.radioAtivo.isChecked():
+                print("Ativo")
+            elif self.radioInativo.isChecked():
+                print("Inativo")
+            else:
+                print("Suspenso")
+            print(self.cmpTelefone1.text())
+            print(self.cmpTelefone2.text())
+            print(self.cmpEmailXml.text())
+            print(self.cmpEmailComercial.text())
+
 

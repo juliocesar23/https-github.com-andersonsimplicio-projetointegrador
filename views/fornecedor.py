@@ -7,6 +7,13 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtCore import pyqtSlot
+from PyQt5.QtGui import *
+from PyQt5.QtWidgets import *
+from controller.validador import *
+from controller.validador import AlertaCpfCnpj
+from views.func import *
+
 
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
@@ -182,10 +189,23 @@ class Ui_Dialog(object):
 
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
+        # Controles dos botoes
+        self.btnSalvar.clicked.connect(self.validar)
+
+    def validar(self):
+        if self.radioFisica.isChecked():
+            if validar_cpf(self.cmpCnpjCpf.text()) != False:
+                print("cpf:")
+        elif self.radioJuridica.isChecked():
+            if validar_cnpj(self.cmpCnpjCpf.text()) != False:
+                print("cnpj:")
+        else:
+            AlertaCpfCnpj()
+
 
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
-        Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
+        Dialog.setWindowTitle(_translate("Dialog", "Cadastro Fornecedor"))
         self.label_23.setText(_translate("Dialog", "e-mail Comercial"))
         self.label_30.setText(_translate("Dialog", "Bairro"))
         self.label_17.setText(_translate("Dialog", "Telefone 2"))
