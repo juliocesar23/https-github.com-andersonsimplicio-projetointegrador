@@ -9,8 +9,8 @@ from PyQt5.QtWidgets import QApplication, QMainWindow,QDialog
 from PyQt5 import QtCore, QtGui, QtWidgets
 from views.img import testando_rc
 from views import cliente as cli #tela de cliente
-from views import Fornecedor as forn # tela de Fornecedor
-from views import Produto as prod
+from views import fornecedor as forn # tela de Fornecedor
+from views import produto as prod
 from views import OpEscolha as opcao
 
 import sys

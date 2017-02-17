@@ -16,19 +16,6 @@ if __name__ == '__main__':
     dialog.show()
     sys.exit(dialog.exec_())
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 '''
 def window():
     app = QApplication(sys.argv)

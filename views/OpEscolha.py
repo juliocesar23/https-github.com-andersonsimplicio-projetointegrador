@@ -9,8 +9,8 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import  QDialog
 from views import cliente as cli
-from views import Fornecedor  as forn
-from views import Produto as prod
+from views import fornecedor  as forn
+from views import produto as prod
 
 class Ui_OpCadastro(object):
     def setupUi(self, OpCadastro,operacao):

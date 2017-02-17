@@ -2,15 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="318a69e6-7a54-4dda-8fe6-d510cb2f59f8" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/Fornecedor.py" afterPath="$PROJECT_DIR$/views/FornecedorOld.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/img/OpEscolha.ui" afterPath="$PROJECT_DIR$/views/ui/OpEscolha.ui" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/img/cadastrodialog.ui" afterPath="$PROJECT_DIR$/views/ui/cadastrodialog.ui" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/img/cliente.ui" afterPath="$PROJECT_DIR$/views/ui/cliente.ui" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/img/consultadialog.ui" afterPath="$PROJECT_DIR$/views/ui/consultadialog.ui" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/img/fornecedorteste.ui" afterPath="$PROJECT_DIR$/views/ui/fornecedorteste.ui" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/img/mainmenu2.0.ui" afterPath="$PROJECT_DIR$/views/ui/mainmenu2.0.ui" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/img/produtoteste.ui" afterPath="$PROJECT_DIR$/views/ui/produtoteste.ui" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/fornecedor.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/Fornecedor.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/Produto.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MainTeste.py" afterPath="$PROJECT_DIR$/MainTeste.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/OpEscolha.py" afterPath="$PROJECT_DIR$/views/OpEscolha.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/cliente.py" afterPath="$PROJECT_DIR$/views/cliente.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/main.py" afterPath="$PROJECT_DIR$/views/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/ui/cadastrodialog.ui" afterPath="$PROJECT_DIR$/views/ui/cadastrodialog.ui" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/ui/cliente.ui" afterPath="$PROJECT_DIR$/views/ui/cliente.ui" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/ui/consultadialog.ui" afterPath="$PROJECT_DIR$/views/ui/consultadialog.ui" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/ui/fornecedorteste.ui" afterPath="$PROJECT_DIR$/views/ui/fornecedorteste.ui" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/ui/mainmenu2.0.ui" afterPath="$PROJECT_DIR$/views/ui/mainmenu2.0.ui" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/ui/produtoteste.ui" afterPath="$PROJECT_DIR$/views/ui/produtoteste.ui" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,14 +30,44 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FornecedorOld.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/FornecedorOld.py">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2484">
-              <caret line="206" column="0" lean-forward="false" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
+            <state relative-caret-position="417">
+              <caret line="415" column="39" lean-forward="false" selection-start-line="415" selection-start-column="39" selection-end-line="415" selection-end-column="39" />
               <folding>
-                <element signature="e#193#235#0" expanded="true" />
+                <element signature="e#196#257#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="produto.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/produto.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fornecedor.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/fornecedor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cliente.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/cliente.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -66,23 +101,23 @@
         <option value="$PROJECT_DIR$/view/main.py" />
         <option value="$PROJECT_DIR$/mainwindow.py" />
         <option value="$PROJECT_DIR$/controller/teste.p.py" />
-        <option value="$PROJECT_DIR$/views/produto.py" />
         <option value="$PROJECT_DIR$/views/fornecedor.py" />
         <option value="$PROJECT_DIR$/controller/cpfvalidador.py" />
         <option value="$PROJECT_DIR$/controller/cpfcnpj.py" />
         <option value="$PROJECT_DIR$/../Estoque/Dialogo.py" />
         <option value="$PROJECT_DIR$/views/func.py" />
         <option value="$PROJECT_DIR$/controller/validador.py" />
-        <option value="$PROJECT_DIR$/MainTeste.py" />
         <option value="$PROJECT_DIR$/teste.py" />
-        <option value="$PROJECT_DIR$/views/OpEscolha.py" />
-        <option value="$PROJECT_DIR$/views/main.py" />
-        <option value="$PROJECT_DIR$/views/cliente.py" />
         <option value="$PROJECT_DIR$/views/Produto.py" />
         <option value="$PROJECT_DIR$/readme.txt" />
         <option value="$PROJECT_DIR$/sidsid.txt" />
         <option value="$PROJECT_DIR$/views/Fornecedor.py" />
         <option value="$PROJECT_DIR$/views/ui/Fornecedor.py" />
+        <option value="$PROJECT_DIR$/views/cliente.py" />
+        <option value="$PROJECT_DIR$/views/OpEscolha.py" />
+        <option value="$PROJECT_DIR$/views/produto.py" />
+        <option value="$PROJECT_DIR$/views/main.py" />
+        <option value="$PROJECT_DIR$/MainTeste.py" />
       </list>
     </option>
   </component>
@@ -109,6 +144,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -155,8 +192,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -179,15 +214,15 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/views" />
-      <recent name="$PROJECT_DIR$/views/img" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/views" />
       <recent name="$PROJECT_DIR$/views/ui" />
       <recent name="$PROJECT_DIR$/Model" />
       <recent name="$PROJECT_DIR$/Excluir" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/views" />
+      <recent name="$PROJECT_DIR$/views/img" />
     </key>
   </component>
   <component name="RunManager" selected="Python.mainwindow">
@@ -452,7 +487,14 @@
       <option name="project" value="LOCAL" />
       <updated>1487163909686</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Teste de atualização">
+      <created>1487166734871</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1487166734871</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -468,7 +510,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1922" height="1053" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15104167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -517,27 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/validador.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/cliente.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/validador.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/cliente.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3180">
@@ -578,16 +599,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4125">
           <caret line="405" column="12" lean-forward="false" selection-start-line="405" selection-start-column="12" selection-end-line="405" selection-end-column="12" />
-          <folding>
-            <element signature="e#196#257#0" expanded="true" />
-            <element signature="e#1134#1307#0" expanded="false" />
-            <element signature="e#2342#2862#0" expanded="false" />
-            <element signature="e#3778#4298#0" expanded="false" />
-            <element signature="e#5230#5750#0" expanded="false" />
-            <element signature="e#6710#7230#0" expanded="false" />
-            <element signature="e#8179#8780#0" expanded="false" />
-            <element signature="e#14999#17014#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -653,25 +664,11 @@
     <entry file="file://$PROJECT_DIR$/views/cadastrodialog.ui" />
     <entry file="file://$PROJECT_DIR$/teste.py" />
     <entry file="file://$PROJECT_DIR$/Excluir/cadastrodialog.py" />
-    <entry file="file://$PROJECT_DIR$/MainTeste.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Excluir/Produto.py" />
     <entry file="file://$PROJECT_DIR$/mainwindow.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/OpEscolha.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="73" column="31" lean-forward="false" selection-start-line="69" selection-start-column="12" selection-end-line="73" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -682,47 +679,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/cliente.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4125">
-          <caret line="281" column="0" lean-forward="false" selection-start-line="281" selection-start-column="0" selection-end-line="281" selection-end-column="0" />
-          <folding>
-            <element signature="e#193#235#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/Produto.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3120">
-          <caret line="208" column="62" lean-forward="false" selection-start-line="208" selection-start-column="62" selection-end-line="208" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3870">
-          <caret line="415" column="41" lean-forward="false" selection-start-line="415" selection-start-column="41" selection-end-line="415" selection-end-column="41" />
-          <folding>
-            <element signature="e#196#257#0" expanded="true" />
-            <element signature="e#1134#1307#0" expanded="false" />
-            <element signature="e#2342#2862#0" expanded="false" />
-            <element signature="e#3778#4298#0" expanded="false" />
-            <element signature="e#5230#5750#0" expanded="false" />
-            <element signature="e#6710#7230#0" expanded="false" />
-            <element signature="e#8179#8780#0" expanded="false" />
-            <element signature="e#14999#17014#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/backup/Fornecedor.py" />
     <entry file="file://$PROJECT_DIR$/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="72" lean-forward="false" selection-start-line="0" selection-start-column="72" selection-end-line="0" selection-end-column="72" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -786,25 +747,81 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="32" lean-forward="true" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/Fornecedor.py" />
     <entry file="file://$PROJECT_DIR$/views/Fornecedor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="201" column="12" lean-forward="false" selection-start-line="201" selection-start-column="12" selection-end-line="201" selection-end-column="12" />
+        <state relative-caret-position="3000">
+          <caret line="206" column="0" lean-forward="false" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/FornecedorOld.py">
+    <entry file="file://$PROJECT_DIR$/views/Produto.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2484">
-          <caret line="206" column="0" lean-forward="false" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
+        <state relative-caret-position="15">
+          <caret line="41" column="48" lean-forward="false" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/cliente.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="181" column="28" lean-forward="false" selection-start-line="181" selection-start-column="28" selection-end-line="181" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/OpEscolha.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="415" column="39" lean-forward="false" selection-start-line="415" selection-start-column="39" selection-end-line="415" selection-end-column="39" />
           <folding>
-            <element signature="e#193#235#0" expanded="true" />
+            <element signature="e#196#257#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/produto.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/fornecedor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MainTeste.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/cliente.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
