@@ -12,8 +12,8 @@ from views import cliente as cli #tela de cliente
 from views import fornecedor as forn # tela de Fornecedor
 from views import produto as prod
 from views import OpEscolha as opcao
-
 import sys
+
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):

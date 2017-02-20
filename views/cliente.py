@@ -1,12 +1,11 @@
 # -*- coding: utf-8 -*-
-
 # Form implementation generated from reading ui file 'fornecedordialog.ui'
 #
 # Created by: PyQt5 UI code generator 5.6
 #
 # WARNING! All changes made in this file will be lost!
 
-from PyQt5 import QtCore, QtGui, QtWidgets
+
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtCore import pyqtSlot
 from PyQt5.QtGui import *
@@ -16,9 +15,10 @@ from controller.validador import AlertaCpfCnpj
 from views.func import *
 
 class Ui_Dialog(object):
-    def setupUi(self, Dialog):
+    def setupUi(self,Dialog):
         Dialog.setObjectName("Dialog")
         Dialog.resize(1001, 615)
+        self.D = Dialog
         self.cmpCodigo = QtWidgets.QLineEdit(Dialog)
         self.cmpCodigo.setGeometry(QtCore.QRect(50, 50, 51, 20))
         self.cmpCodigo.setObjectName("cmpCodigo")
@@ -230,49 +230,51 @@ class Ui_Dialog(object):
     def validar(self):
         if self.radioFisica.isChecked():
             if validar_cpf(self.cmpCnpjCpf.text()) != False:
-                print("cpf:")
+                self.documento = self.cmpCnpjCpf.text()
                 self.valido = True
         elif self.radioJuridica.isChecked():
             if validar_cnpj(self.cmpCnpjCpf.text()) != False:
-                print("cnpj:")
+                self.documento = self.cmpCnpjCpf.text()
                 self.valido = True
         else:
             AlertaCpfCnpj()
             self.valido = False
 
     def CadastroSalvar(self):
+
+
         dadosLista = []  # Captura uma lista de dados referente ao cliente
         endercoLista = []  # lista de dados referente apenas ao endereco do cliente
 
         if self.valido == True:
 
-            dadosLista.append(self.cmpCodigo.text())
+            dadosLista.append(int(self.cmpCodigo.text()))
+            dadosLista.append(self.documento)#
             dadosLista.append(self.cmpRazaoSocial.text())
             dadosLista.append(self.cmpNomeFantasia.text())
-            dadosLista.append(self.cmpCnpjCpf.text())
             dadosLista.append(self.cmpInscricaoEstadual.text())
             dadosLista.append(self.cmpInscricaoEstadual_2.text())
             print(dadosLista)
             # cadastro de endereco
-            print(self.cmpCep.text())
-            print(self.cmpEndereco.text())
-            print(self.cmpNum.text())
-            print(self.cmpComplemento.text())
-            print(self.cmpBairro.text())
-            print(self.cmpCidade.text())
-            print(self.cmpEndereco.text())
-            print(self.cmpCodMunicipio.text())
-            print(self.cmpUf.text())
-            print(self.cmpPais.text())
+            endercoLista.append(int(self.cmpCodigo.text()))
+            endercoLista.append(self.cmpCep.text())
+            endercoLista.append(self.cmpEndereco.text())
+            endercoLista.append(self.cmpNum.text())
+            endercoLista.append(self.cmpComplemento.text())
+            endercoLista.append(self.cmpBairro.text())
+            endercoLista.append(self.cmpCidade.text())
+            endercoLista.append(self.cmpEndereco.text())
+            endercoLista.append(self.cmpCodMunicipio.text())
+            endercoLista.append(self.cmpUf.text())
+            endercoLista.append(self.cmpPais.text())
             if self.radioAtivo.isChecked():
-                print("Ativo")
+                endercoLista.append(1)#Ativo
             elif self.radioInativo.isChecked():
-                print("Inativo")
+                endercoLista.append(0)#Inativo
             else:
-                print("Suspenso")
-            print(self.cmpTelefone1.text())
-            print(self.cmpTelefone2.text())
-            print(self.cmpEmailXml.text())
-            print(self.cmpEmailComercial.text())
-
-
+                endercoLista.append(-1)#Suspenso
+            endercoLista.append(self.cmpTelefone1.text())
+            endercoLista.append(self.cmpTelefone2.text())
+            endercoLista.append(self.cmpEmailXml.text())
+            endercoLista.append(self.cmpEmailComercial.text())
+            self.D.accept()
