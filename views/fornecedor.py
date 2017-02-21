@@ -48,7 +48,7 @@ class Ui_Dialog(object):
         self.cmpInscricaoEstadual.setObjectName("cmpInscricaoEstadual")
         self.cmpInscricaoEstadual_2 = QtWidgets.QLineEdit(Dialog)
         self.cmpInscricaoEstadual_2.setGeometry(QtCore.QRect(450, 100, 141, 20))
-        self.cmpInscricaoEstadual_2.setObjectName("cmpInscricaoEstadual_2")
+        self.cmpInscricaoEstadual_2.setObjectName("cmpInscricaoMunicipal")
         self.cmpCep = QtWidgets.QLineEdit(Dialog)
         self.cmpCep.setGeometry(QtCore.QRect(50, 170, 101, 20))
         self.cmpCep.setObjectName("cmpCep")

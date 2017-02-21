@@ -1,3 +1,37 @@
+
+import Model.conexao as conn
+
+banco = conn.managerdb()
+c = banco.getcursor()
+lista =[(1,"Carla")]
+
+c.executemany("""INSERT INTO Cliente (cod_cliente,nome)VALUES(?,?)""",lista)
+
+banco.fecharConexao()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'''
 from PyQt4 import QtGui
 # from mainwindow import Ui_MainWindow
 
@@ -38,7 +72,6 @@ if __name__ == '__main__':
         window.show()
         sys.exit(app.exec_())
 
-'''
 def window():
     app = QApplication(sys.argv)
     w = QWidget()
@@ -72,7 +105,7 @@ def showdialog():
     labelAlerta.move(10,20)
     Alerta.setWindowModality(QtCore.Qt.ApplicationModal)
     Alerta.exec_()
-    '''
+'''
 
 
 
