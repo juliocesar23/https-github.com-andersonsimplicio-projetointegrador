@@ -11,7 +11,7 @@ from PyQt5.QtCore import pyqtSlot
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 from controller.validador import *
-from controller.validador import AlertaCpfCnpj
+from controller.validador import AlertaCpfCnpj, confirmar
 from views.func import *
 
 class Ui_Dialog(object):
@@ -186,7 +186,7 @@ class Ui_Dialog(object):
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
         # Controles dos botoes
-        self.btnSalvar.clicked.connect(self.validar)
+       # self.btnSalvar.clicked.connect(self.validar)
         self.btnSalvar.clicked.connect(self.CadastroSalvar)
 
     def retranslateUi(self, Dialog):
@@ -246,35 +246,42 @@ class Ui_Dialog(object):
         dadosLista = []  # Captura uma lista de dados referente ao cliente
         endercoLista = []  # lista de dados referente apenas ao endereco do cliente
 
-        if self.valido == True:
 
-            dadosLista.append(int(self.cmpCodigo.text()))
-            dadosLista.append(self.documento)#
-            dadosLista.append(self.cmpRazaoSocial.text())
-            dadosLista.append(self.cmpNomeFantasia.text())
-            dadosLista.append(self.cmpInscricaoEstadual.text())
-            dadosLista.append(self.cmpInscricaoEstadual_2.text())
-            print(dadosLista)
-            # cadastro de endereco
-            endercoLista.append(int(self.cmpCodigo.text()))
-            endercoLista.append(self.cmpCep.text())
-            endercoLista.append(self.cmpEndereco.text())
-            endercoLista.append(self.cmpNum.text())
-            endercoLista.append(self.cmpComplemento.text())
-            endercoLista.append(self.cmpBairro.text())
-            endercoLista.append(self.cmpCidade.text())
-            endercoLista.append(self.cmpEndereco.text())
-            endercoLista.append(self.cmpCodMunicipio.text())
-            endercoLista.append(self.cmpUf.text())
-            endercoLista.append(self.cmpPais.text())
-            if self.radioAtivo.isChecked():
-                endercoLista.append(1)#Ativo
-            elif self.radioInativo.isChecked():
-                endercoLista.append(0)#Inativo
-            else:
-                endercoLista.append(-1)#Suspenso
-            endercoLista.append(self.cmpTelefone1.text())
-            endercoLista.append(self.cmpTelefone2.text())
-            endercoLista.append(self.cmpEmailXml.text())
-            endercoLista.append(self.cmpEmailComercial.text())
-            self.D.accept()
+       # if self.valido == True:
+        '''
+        dadosLista.append(int(self.cmpCodigo.text()))
+        dadosLista.append(self.documento)#
+        dadosLista.append(self.cmpRazaoSocial.text())
+        dadosLista.append(self.cmpNomeFantasia.text())
+        dadosLista.append(self.cmpInscricaoEstadual.text())
+        dadosLista.append(self.cmpInscricaoEstadual_2.text())
+        print(dadosLista)
+        # cadastro de endereco
+        endercoLista.append(int(self.cmpCodigo.text()))
+        endercoLista.append(self.cmpCep.text())
+        endercoLista.append(self.cmpEndereco.text())
+        endercoLista.append(self.cmpNum.text())
+        endercoLista.append(self.cmpComplemento.text())
+        endercoLista.append(self.cmpBairro.text())
+        endercoLista.append(self.cmpCidade.text())
+        endercoLista.append(self.cmpEndereco.text())
+        endercoLista.append(self.cmpCodMunicipio.text())
+        endercoLista.append(self.cmpUf.text())
+        endercoLista.append(self.cmpPais.text())
+        if self.radioAtivo.isChecked():
+            endercoLista.append(1)#Ativo
+        elif self.radioInativo.isChecked():
+            endercoLista.append(0)#Inativo
+        else:
+            endercoLista.append(-1)#Suspenso
+        endercoLista.append(self.cmpTelefone1.text())
+        endercoLista.append(self.cmpTelefone2.text())
+        endercoLista.append(self.cmpEmailXml.text())
+        endercoLista.append(self.cmpEmailComercial.text())
+        '''
+
+        if confirmar():
+            print("Sim")
+        else:
+            print("Não fazer Nada")
+

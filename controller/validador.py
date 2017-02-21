@@ -6,6 +6,9 @@ from PyQt5.QtWidgets import QMessageBox
 
 __all__ = ['validar_cpf', 'validar_cnpj']
 
+
+
+
 def validar_cpf(cpf):
 
     cpf = ''.join(re.findall('\d', str(cpf)))
@@ -67,3 +70,22 @@ def AlertaCpfCnpj():
     msg.setDetailedText("É obrigatório a selecção de pessoa física ou Juridica para o cadastro")
     msg.show()
     msg.exec_()
+
+def confirmar():
+    msg = QMessageBox()
+    msg.setIcon(QMessageBox.Question)
+    msg.setText("Atenção")
+    msg.addButton("sim",QMessageBox.YesRole)
+    msg.addButton("Não",QMessageBox.NoRole)
+    msg.setInformativeText("Você deseja efetuar o cadastro ?")
+    msg.setWindowTitle("Concluir Cadastro")
+    msg.show()
+    msg.exec_()
+    print(msg)
+    print(QMessageBox.Yes)
+    if msg == QMessageBox.YesRole:
+        return True
+    else:
+        return False
+
+
