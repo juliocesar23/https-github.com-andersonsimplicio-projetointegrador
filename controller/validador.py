@@ -71,21 +71,18 @@ def AlertaCpfCnpj():
     msg.show()
     msg.exec_()
 
+# A função abaixo Captura a opeção do usuario de salvar ou não dados no Banco
 def confirmar():
     msg = QMessageBox()
     msg.setIcon(QMessageBox.Question)
     msg.setText("Atenção")
-    nao = msg.addButton("sim",QMessageBox.YesRole)
+    yes = msg.addButton("sim",QMessageBox.YesRole)
     msg.addButton("Não",QMessageBox.NoRole)
     msg.setInformativeText("Você deseja efetuar o cadastro ?")
     msg.setWindowTitle("Concluir Cadastro")
     msg.show()
-
     msg.exec_()
-
-
-    print(QMessageBox.Yes)
-    if msg.clickedButton() == nao:
+    if msg.clickedButton() == yes:
         return True
     else:
         return False

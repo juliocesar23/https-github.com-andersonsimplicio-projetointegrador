@@ -273,7 +273,6 @@ class Ui_Dialog(object):
             else:
                 dadosLista.append(-1)  # Suspenso
 
-
             dadosLista.append(self.cmpInscricaoEstadual.text())
             dadosLista.append(self.cmpInscricaoMunicipal.text())
             dadosLista.append(self.cmpEmailComercial.text())
@@ -285,24 +284,28 @@ class Ui_Dialog(object):
 
             print(dadosLista)
             # cadastro de endereco
-            endercoLista.append(int(self.cmpCodigo.text()))
-            endercoLista.append(self.cmpCep.text())
-            endercoLista.append(self.cmpEndereco.text())
-            endercoLista.append(self.cmpNum.text())
-            endercoLista.append(self.cmpComplemento.text())
-            endercoLista.append(self.cmpBairro.text())
-            endercoLista.append(self.cmpCidade.text())
-            endercoLista.append(self.cmpEndereco.text())
-            endercoLista.append(self.cmpCodMunicipio.text())
-            endercoLista.append(self.cmpUf.text())
-            endercoLista.append(self.cmpPais.text())
+            endercoLista.append(int(self.cmpCodigo.text()))#Cod_cliente referido endereço 1
+            endercoLista.append(int(self.cmpCodMunicipio.text()))#Codigo do municipio 2
+            endercoLista.append(int(self.cmpNum.text()))#Numero da casa 3
+            endercoLista.append(self.cmpEndereco.text())#4
+            endercoLista.append(self.cmpCidade.text())#5
+            endercoLista.append(self.cmpBairro.text())#6
+            endercoLista.append(self.cmpPais.text())  # 7
+            endercoLista.append(self.cmpUf.text())#8
+            endercoLista.append(self.cmpComplemento.text())#9
+            endercoLista.append(self.cmpCep.text())  # 10
+            print(endercoLista)
+
+
+
+
 
                 
 
 
             if confirmar():
                 clibd = clientebd.clienteBD()
-                clibd.insert(dadosLista)
-            else:
-                print("Não fazer Nada")
+                clibd.insert(dadosLista,endercoLista)
+                self.D.accept()
+
 
