@@ -12,6 +12,9 @@ from views import cliente as cli #tela de cliente
 from views import fornecedor as forn # tela de Fornecedor
 from views import produto as prod
 from views import OpEscolha as opcao
+from views import consultacliente as consulcli
+from views import consultafornecedor as consulforn
+from views import consultaproduto as consulprod
 import sys
 
 
@@ -302,8 +305,8 @@ class Ui_MainWindow(object):
         self.mCadastroProduto.setObjectName("mCadastroProduto")
         self.mConsultaCliente = QtWidgets.QAction(MainWindow)
         self.mConsultaCliente.setObjectName("mConsultaCliente")
-        self.MConsultaFornecedor = QtWidgets.QAction(MainWindow)
-        self.MConsultaFornecedor.setObjectName("MConsultaFornecedor")
+        self.mConsultaFornecedor = QtWidgets.QAction(MainWindow)
+        self.mConsultaFornecedor.setObjectName("MConsultaFornecedor")
         self.mConsultaProduto = QtWidgets.QAction(MainWindow)
         self.mConsultaProduto.setObjectName("mConsultaProduto")
         self.mMovimentacoesEntrada = QtWidgets.QAction(MainWindow)
@@ -332,7 +335,7 @@ class Ui_MainWindow(object):
         self.menuConsulta.addSeparator()
         self.menuConsulta.addAction(self.mConsultaCliente)
         self.menuConsulta.addSeparator()
-        self.menuConsulta.addAction(self.MConsultaFornecedor)
+        self.menuConsulta.addAction(self.mConsultaFornecedor)
         self.menuConsulta.addSeparator()
         self.menuConsulta.addAction(self.mConsultaProduto)
         self.menuConsulta.addSeparator()
@@ -374,6 +377,12 @@ class Ui_MainWindow(object):
 
         self.btnCadastro.clicked.connect(self.OpEscolha)
 
+        self.mConsultaCliente.triggered.connect(self.searchcliente)
+
+        self.mConsultaProduto.triggered.connect(self.searchproduto)
+
+        self.mConsultaFornecedor.triggered.connect(self.searchfornecedor)
+
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Programa Estoque"))
@@ -392,7 +401,7 @@ class Ui_MainWindow(object):
         self.mCadastroFornecedor.setText(_translate("MainWindow", "Fornecedor"))
         self.mCadastroProduto.setText(_translate("MainWindow", "Produto"))
         self.mConsultaCliente.setText(_translate("MainWindow", "Cliente"))
-        self.MConsultaFornecedor.setText(_translate("MainWindow", "Fornecedor"))
+        self.mConsultaFornecedor.setText(_translate("MainWindow", "Fornecedor"))
         self.mConsultaProduto.setText(_translate("MainWindow", "Produto"))
         self.mMovimentacoesEntrada.setText(_translate("MainWindow", "Entrada"))
         self.mMovimentacoesSaida.setText(_translate("MainWindow", "Saída"))
@@ -433,3 +442,25 @@ class Ui_MainWindow(object):
         escolha.exec_()
 
 
+    #Funções para abrir Telas de Consulta
+
+
+    def searchcliente(self):
+        self.window = QDialog()
+        WconsultaCli = consulcli.Ui_Dialog()
+        WconsultaCli.setupUi(self.window)
+        self.window.show()
+        self.window.exec_()
+
+    def searchproduto(self):
+        self.window = QDialog()
+        WconsulProd = consulprod.Ui_Dialog()
+        WconsulProd.setupUi(self.window)
+        self.window.show()
+        self.window.exec_()
+    def searchfornecedor(self):
+        self.window = QDialog()
+        WconsulForn = consulforn.Ui_Dialog()
+        WconsulForn.setupUi(self.window)
+        self.window.show()
+        self.window.exec_()
